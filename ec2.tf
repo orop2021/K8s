@@ -2,7 +2,7 @@ resource "aws_instance" "k8_instance" {
       ami = var.ami
       key_name = var.key_name
       instance_type = var.instance_type
-      security_group_id = ["sg-02695d387645798f6"]
+      vpc_security_group_ids = ["sg-02695d387645798f6"]
       tags = {
          Name = var.name
          env = var.env
