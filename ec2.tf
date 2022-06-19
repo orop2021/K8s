@@ -1,4 +1,4 @@
-resource "aws_instance" "K8_instance" {
+resource "aws_instance" "k8_instance" {
       ami = var.ami
       key_name = var.key_name
       instance_type = var.instance_type
