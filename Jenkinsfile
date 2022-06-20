@@ -28,5 +28,11 @@ pipeline {
          sh ' echo " ******** Terraform have Apply ******" '
    }
   }
+    stage('Terraform Destroy'){
+       steps{
+         sh 'terraform destroy --auto-approve'
+         sh ' echo " ******** Terraform have Desroyed Successfully ******" '
+    }
+  }
  }
 }
