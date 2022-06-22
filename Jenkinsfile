@@ -28,11 +28,5 @@ pipeline {
          sh ' echo " ******** Terraform have Destoyed ******" '
    }
   }
-    stage('Terraform Apply'){
-       steps{
-         sh 'terraform apply --auto-approve'
-         sh ' echo " ******** Terraform have Apply ******" '
-   }
-  }
  }
 }
